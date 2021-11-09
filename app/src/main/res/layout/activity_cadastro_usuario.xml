@@ -6,7 +6,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     tools:context=".CadastroUsuarioActivity"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#0D070707">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,10 +32,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Trocar foto"
+            android:text="@string/trocar_foto"
             android:textSize="20dp"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:textColor="@color/purple_200"/>
 
     </LinearLayout>
 
@@ -46,27 +48,167 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Autenticação"
                 android:drawableStart="@drawable/lock_24"
-                android:drawableTint="@color/purple_200"/>
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/purple_200"
+                android:gravity="center_horizontal"
+                android:text="@string/dados_para_autentica_o" />
 
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="E-mail">
+                android:layout_marginTop="16dp"
+                android:hint="E-mail"
+                app:boxBackgroundColor="#0D070707">
 
                 <EditText
+                    android:id="@+id/edit_novo_email"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
 
 
             </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:hint="senha"
+                android:paddingTop="20dp"
+                app:boxBackgroundColor="#0D070707">
+
+
+                <EditText
+                    android:id="@+id/edit_novo_senha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/person_24"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/purple_200"
+                android:gravity="center_horizontal"
+                android:text="Dados Pessoais" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="nome"
+                app:boxBackgroundColor="#0D070707">
+
+                <EditText
+
+                    android:id="@+id/edit_novo_nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Profissao"
+                app:boxBackgroundColor="#0D070707">
+
+                <EditText
+                    android:id="@+id/edit_novo_profissao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/altura"
+                app:boxBackgroundColor="#0D070707">
+
+                <EditText
+                    android:id="@+id/edit_novo_altura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/data_nascimento"
+                app:boxBackgroundColor="#0D070707">
+
+                <EditText
+                    android:id="@+id/edit_novo_dataNascimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sexo"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:id="@+id/radio_feminino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="feminino"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio_masculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="masculino"
+                    />
+
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f666"/>
+
 
         </LinearLayout>
 
