@@ -10,11 +10,7 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-        val buttonCriarConta = findViewById<Button>(R.id.button_criar_conta)
 
-        buttonCriarConta.setOnClickListener { val abrirCadastro = Intent(this, CadastroUsuarioActivity::class.java)
-        startActivity(abrirCadastro)
-        }
 
     }
 }
