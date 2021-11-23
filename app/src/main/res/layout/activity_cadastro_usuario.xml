@@ -36,7 +36,7 @@
             android:textSize="20dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:textColor="@color/purple_200"/>
+            android:textColor="@color/primary_dark"/>
 
     </LinearLayout>
 
@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/lock_24"
                 android:drawablePadding="8dp"
-                android:drawableTint="@color/purple_200"
+                android:drawableTint="@color/primary_dark"
                 android:gravity="center_horizontal"
                 android:text="@string/dados_para_autentica_o" />
 
@@ -101,7 +101,7 @@
                 android:layout_marginTop="20dp"
                 android:drawableStart="@drawable/person_24"
                 android:drawablePadding="8dp"
-                android:drawableTint="@color/purple_200"
+                android:drawableTint="@color/primary_dark"
                 android:gravity="center_horizontal"
                 android:text="Dados Pessoais" />
 

@@ -12,6 +12,8 @@
     <color name="primary">#388e3c</color>
     <color name="primary_dark">#00600f</color>
     <color name="primary_light">#6abf69</color>
+    <color name="rosa">#d81b60</color>
+    <color name="vermelho">#ff5f52</color>
 
 
 </resources>
