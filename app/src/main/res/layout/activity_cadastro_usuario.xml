@@ -151,7 +151,7 @@
                     android:id="@+id/edit_novo_altura"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number"/>
+                    android:inputType="numberDecimal"/>
 
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -168,7 +168,8 @@
                     android:id="@+id/edit_novo_dataNascimento"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="date"/>
+                    android:inputType="date"
+                    android:focusable="false"/>
 
 
             </com.google.android.material.textfield.TextInputLayout>
