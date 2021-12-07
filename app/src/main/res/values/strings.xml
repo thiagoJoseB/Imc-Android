@@ -21,4 +21,16 @@
     <string name="data_nascimento">Data Nascimento</string>
     <string name="altura">Altura</string>
 
+
+
+
+
+    <string-array name="niveis">
+        <item>Atividade leve</item>
+        <item>Atividade moderada</item>
+        <item>Atividade intensa</item>
+
+
+    </string-array>
+
 </resources>
